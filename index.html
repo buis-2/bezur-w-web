@@ -28,6 +28,20 @@
         margin-top: 10px;
         margin-right: 10px;
         display: inline-block;
+    
+        animation-duration: 1s;
+        animation-name: spin;
+        transition: animation-play-state;
+    }
+    @keyframes spin{
+        0%{
+
+        }
+        50%{
+            scale: 2;
+            transform: rotate(0);
+            border-radius: 10;
+        }
     }
 
 
@@ -39,6 +53,7 @@
     .down:hover {
         opacity: 0.8;
         box-shadow: 10px 10px 10px rgba(255, 255, 255, 0.5);
+        animation-play-state: paused;
     }
 
     .down:active {
